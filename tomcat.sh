@@ -1,4 +1,4 @@
-dnf install java-21-amazon-corretto java-21-openjdk.x86_64 java-21-openjdk-devel.x86_64 java-21-openjdk-headless.x86_64 -y
+dnf install wget java-21-amazon-corretto java-21-openjdk.x86_64 java-21-openjdk-devel.x86_64 java-21-openjdk-headless.x86_64 -y
 wget https://dlcdn.apache.org/tomcat/tomcat-11/v11.0.18/bin/apache-tomcat-11.0.18.tar.gz
 tar -zxvf apache-tomcat-11.0.18.tar.gz
 sed -i '56  a\<role rolename="manager-gui"/>' apache-tomcat-11.0.18/conf/tomcat-users.xml
